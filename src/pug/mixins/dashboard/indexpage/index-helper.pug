@@ -1,0 +1,23 @@
+mixin ProjectType(number,iconColor,source)
+	.col-6.col-xl-4
+		.d-flex.flex-column.flex-center.align-items-sm-start.flex-md-row.justify-content-md-between.flex-xxl-column.p-3.ps-sm-3.ps-md-4.p-md-3.h-100&attributes(attributes)
+			.d-flex.align-items-center.mb-1
+				span.fa-solid.fa-square.fs-11.me-2(data-fa-transform='up-2' class=`${iconColor}`)
+				span.mb-0.fs-9.text-body=source
+			h3.fw-semibold.ms-xl-3.ms-xxl-0.pe-md-2.pe-xxl-0.mb-0.mb-sm-3=number
+
+mixin ProjectTypes
+	.row.justify-content-center
+		.col-sm-7.col-md-8.col-xxl-8.mb-md-3.mb-lg-0
+			h3 CCC Pillar
+			p.text-body-tertiary Project Types
+			.row.g-0
+				+ProjectType('16','text-success','Education').border-1.border-end-md-0.border-end-xl.border-translucent
+				+ProjectType('12','text-info-light','Evidence Generation').border-1.border-end-xl.border-bottom.border-bottom-xl-0.border-translucent
+				+ProjectType('4','text-danger-lighter','Health Equity').border-1.border-end.border-translucent
+		.col-sm-5.col-md-4.col-xxl-4.my-3.my-sm-0
+			.position-relative.d-flex.flex-center.mb-sm-4.mb-xl-0.echart-contact-by-source-container.mt-sm-7.mt-lg-4.mt-xl-0
+				.echart-contact-by-source(style='min-height:245px;width:100%')
+				.position-absolute.rounded-circle.bg-primary-subtle.top-50.start-50.translate-middle.d-flex.flex-center(style="height:100px; width:100px;")
+					h3.mb-0.text-primary-dark.fw-bolder(data-label)
+					

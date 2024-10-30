@@ -1,0 +1,205 @@
+append variables
+  - var title = 'BPX';
+  - var theme = `${name}-${version}`;
+  - var bootstrapVersion = '5.3';
+  - var attrsMain = { id: 'top', class: 'main' };
+  - var attrsLayout = { class: '', 'data-layout': ENV === 'PROD' ? 'container' : false }
+  - var colors = ['primary', 'secondary', 'success', 'info', 'warning', 'danger'];
+  - var grays = [ '1100', 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+  - var colorsAll = colors.concat(grays);
+  - var footer = true;
+  - var pathName = (locals.filename || locals.history[0]).split('\\').join('/').split('src/pug/').pop().split('.pug').shift();
+  - var pageTree = pathName.split('/');
+  - var CWD = pageTree.slice(1).map(() => '../').join('');
+  -
+    var months = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+  -
+    var monthsShort = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ]
+  -
+    var themeColor =  {
+      primary: '#3874ff',
+      secondary: '#49525d',
+      success: '#25b003',
+      info: '#0097eb',
+      warning: '#e5780b',
+      danger: '#ec1f00',
+      light: '#f6f7f8',
+      dark: '#15181b'
+    }
+  -
+    var graysColor = {
+      white: '#fff',
+      subtle: '#fcfcfd',
+      100: '#f6f7f8',
+      200: '#f1f2f4',
+      300: '#e2e5e9',
+      400: '#b1b9c2',
+      500: '#9aa3af',
+      600: '#84909e',
+      700: '#6d7a8a',
+      800: '#5a6573',
+      900: '#49525d',
+      1000: '#2b3036',
+      1100: '#15181b',
+      'black': '#000'
+    } 
+  -
+    var sitemap = [
+      {
+        label: 'dashboard',
+        labelDisabled: true,
+        icon: 'uil-chart-pie',
+        pages: [
+          {
+            name: 'Dashboard',
+            icon: 'pie-chart',
+            flat: true,
+            dot: true,
+            pages: [
+              {
+                name: 'Home',
+                path: 'index',
+                pathName: 'default-dashboard',
+                topNavIcon: 'shopping-cart', // works for navbar top
+              },
+              {
+                name: 'Project Overview',
+                path: 'dashboard/project-management',
+                pathName: 'project-management-dashboard',
+                topNavIcon: 'clipboard',
+              },
+              {
+                name: 'Project Activity',
+                path: 'dashboard/crm',
+                pathName: 'crm',
+                topNavIcon: 'phone',
+              },
+            ]
+          },
+        ],
+      },
+      {
+        label: 'apps',
+        icon: 'uil-cube',
+        pages : [
+          {
+            name: 'CRM',
+            icon: 'phone',
+            pages: [
+              {
+                name: 'analytics',
+                path: 'apps/crm/analytics',
+                pathName: 'crm-analytics',
+              },
+              {
+                name: 'deals',
+                path: 'apps/crm/deals',
+                pathName: 'crm-deals',
+              },
+              {
+                name: 'deal details',
+                path: 'apps/crm/deal-details',
+                pathName: 'crm-deal-details',
+              },
+              {
+                name: 'leads',
+                path: 'apps/crm/leads',
+                pathName: 'crm-leads',
+              },
+              {
+                name: 'lead details',
+                path: 'apps/crm/lead-details',
+                pathName: 'crm-lead-details',
+              },
+              {
+                name: 'reports',
+                path: 'apps/crm/reports',
+                pathName: 'crm-reports',
+              },
+              {
+                name: 'report details',
+                path: 'apps/crm/report-details',
+                pathName: 'crm-report-details',
+              },
+              {
+                name: 'add-contact',
+                path: 'apps/crm/add-contact',
+                pathName: 'crm-add-contact',
+              },
+
+            ]
+          },
+          {
+            name: 'project-management',
+            icon: 'clipboard',
+            pages: [
+              {
+                name: 'create new',
+                path: 'apps/project-management/create-new',
+                pathName: 'project-management-create-new',
+              },
+              {
+                name: 'project-list-view',
+                path: 'apps/project-management/project-list-view',
+                pathName: 'project-management-project-list-view',
+              },
+              {
+                name: 'project-card-view',
+                path: 'apps/project-management/project-card-view',
+                pathName: 'project-management-project-card-view',
+              },
+              {
+                name: 'project-board-view',
+                path: 'apps/project-management/project-board-view',
+                pathName: 'project-management-project-board-view',
+              },
+              {
+                name: 'todo-list',
+                path: 'apps/project-management/todo-list',
+                pathName: 'project-management-todo-list',
+              },
+              {
+                name: 'project-details',
+                path: 'apps/project-management/project-details',
+                pathName: 'project-management-project-details',
+              },
+            ]
+          },
+          {
+            name: 'calendar',
+            icon: 'calendar',
+            path: 'apps/calendar',
+            pathName: 'app-calendar',
+          },
+
+        ],
+      },
+    ];
+
+  - var paths = flatSitemap(sitemap);
