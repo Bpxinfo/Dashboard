@@ -30,9 +30,6 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="../../vendors/choices/choices.min.css" rel="stylesheet">
-    <link href="../../vendors/dhtmlx-gantt/dhtmlxgantt.css" rel="stylesheet">
-    <link href="../../vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
@@ -116,13 +113,13 @@
                 </p>
                 <hr class="navbar-vertical-line" />
                 <!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-Leads" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-Leads">
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-Leads" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-Leads">
                     <div class="d-flex align-items-center">
                       <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="phone"></span></span><span class="nav-link-text">Leads</span>
                     </div>
                   </a>
                   <div class="parent-wrapper label-1">
-                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-Leads">
+                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-Leads">
                       <li class="collapsed-nav-item-title d-none">Leads
                       </li>
                       <li class="nav-item"><a class="nav-link" href="../../apps/crm/leads.html">
@@ -137,7 +134,7 @@
                         </a>
                         <!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link" href="../../apps/crm/add-contact.html">
+                      <li class="nav-item"><a class="nav-link active" href="../../apps/crm/add-contact.html">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Add contact</span>
                           </div>
                         </a>
@@ -147,13 +144,13 @@
                   </div>
                 </div>
                 <!-- parent pages-->
-                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-project-management" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-project-management">
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-project-management" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="nv-project-management">
                     <div class="d-flex align-items-center">
                       <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="clipboard"></span></span><span class="nav-link-text">Project management</span>
                     </div>
                   </a>
                   <div class="parent-wrapper label-1">
-                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-project-management">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="nv-project-management">
                       <li class="collapsed-nav-item-title d-none">Project management
                       </li>
                       <li class="nav-item"><a class="nav-link" href="../../apps/project-management/create-new.html">
@@ -168,7 +165,7 @@
                         </a>
                         <!-- more inner pages-->
                       </li>
-                      <li class="nav-item"><a class="nav-link active" href="../../apps/project-management/project-details.html">
+                      <li class="nav-item"><a class="nav-link" href="../../apps/project-management/project-details.html">
                           <div class="d-flex align-items-center"><span class="nav-link-text">Project details</span>
                           </div>
                         </a>
@@ -578,512 +575,226 @@
           </ul>
         </div>
       </nav>
-      <div class="content px-0 pt-navbar">
-        <div class="row g-0">
-          <div class="col-12 col-xxl-8 px-0 bg-body">
-            <div class="px-4 px-lg-6 pt-6 pb-9">
-              <div class="mb-5">
-                <div class="d-flex justify-content-between">
-                  <h2 class="text-body-emphasis fw-bolder mb-2">Optimal Management of Care in Adults with HR-MDS (in partnership with ACCC)</h2>
-                  <div class="btn-reveal-trigger">
-                    <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                    <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                  </div>
-                </div><span class="badge badge-phoenix badge-phoenix-primary">Ongoing<span class="ms-1 uil uil-stopwatch"></span></span>
-              </div>
-              <div class="row gx-0 gx-sm-5 gy-4 mb-4">
-                <div class="col-12 col-xl-3 col-xxl-4 pe-xl-0">
-                  <div class="mb-4 mb-xl-7">
-                    <div class="row gx-0 gx-sm-7">
-                      <div class="col-12 col-sm-auto">
-                        <table class="lh-sm mb-4 mb-sm-0 mb-xl-4">
-                          <tbody>
-                            <tr>
-                              <td class="py-1" colspan="2">
-                                <div class="d-flex"><span class="fa-solid fa-earth-americas me-2 text-body-tertiary fs-9"></span>
-                                  <h5 class="text-body">Public project </h5>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="alight-top py-1">
-                                <div class="d-flex"><span class="fa-solid fa-list-check me-2 text-body-tertiary fs-9"></span>
-                                  <h5 class="text-body-emphasis mb-0 me-2 text-nowrap">4<span class="text-body fw-normal ms-2">Milestones</span></h5><a class="fw-bold fs-9 mt-1" href="#!">See Milestones <span class="fa-solid fa-chevron-right me-2 fs-10"></span></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="align-top py-1">
-                                <div class="d-flex"><span class="fa-solid fa-user me-2 text-body-tertiary fs-9"></span>
-                                  <h5 class="text-body mb-0 text-nowrap">CCC Project Title :</h5>
-                                </div>
-                              </td>
-                              <td class="ps-1 py-1"><a class="fw-semibold d-block lh-sm" href="#!">HR-MDS ACCC</a></td>
-                            </tr>
-                            <tr>
-                              <td class="align-top py-1">
-                                <div class="d-flex"><span class="fa-regular fa-credit-card me-2 text-body-tertiary fs-9"></span>
-                                  <h5 class="text-body mb-0 text-nowrap">Budget : </h5>
-                                </div>
-                              </td>
-                              <td class="fw-bold ps-1 py-1 text-body-highlight">$500,000</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="col-12 col-sm-auto">
-                        <table class="lh-sm">
-                          <tbody>
-                            <tr>
-                              <td class="align-top py-1 text-body text-nowrap fw-bold">Started : </td>
-                              <td class="text-body-tertiary text-opacity-85 fw-semibold ps-3">15th February, 2023</td>
-                            </tr>
-                            <tr>
-                              <td class="align-top py-1 text-body text-nowrap fw-bold">Deadline :</td>
-                              <td class="text-body-tertiary text-opacity-85 fw-semibold ps-3">15th November, 2023</td>
-                            </tr>
-                            <tr>
-                              <td class="align-top py-1 text-body text-nowrap fw-bold">Progress :</td>
-                              <td class="text-warning fw-semibold ps-3">100%</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-xl-9 col-xxl-8 bg-body-emphasis">
-                  <div class="mx-xxl-0">
-                    <h3>Project Milestones</h3>
-                    <p class="text-body-tertiary">HR-MDS-ACCC</p>
-                    <div class="gantt-milestones">
-                      <div class="row g-2 flex-between-center mb-3">
-                        <div class="col-12 col-sm-auto">
-                          <div class="d-flex">
-                            <div class="d-flex align-items-end me-3">
-                              <label class="form-check-label mb-0 me-2 lh-1 text-body" for="progress">Progress</label>
-                              <div class="form-check form-switch min-h-auto mb-0">
-                                <input class="form-check-input" id="progress" type="checkbox" checked="" data-gantt-progress="data-gantt-progress" />
-                              </div>
-                            </div>
-                            <div class="d-flex align-items-end flex-1">
-                              <label class="form-check-label mb-0 me-2 lh-1 text-body" for="links">Links</label>
-                              <div class="form-check form-switch min-h-auto flex-1 mb-0">
-                                <input class="form-check-input" id="links" type="checkbox" checked="" data-gantt-links="data-gantt-links" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-auto">
-                          <div class="btn-group" role="group" data-gantt-scale="data-gantt-scale">
-                            <input class="btn-check" id="weekView" type="radio" name="scaleView" value="week" checked="" />
-                            <label class="btn btn-phoenix-secondary bg-body-highlight-hover fs-10 py-1 mb-0" for="weekView">Week</label>
-                            <input class="btn-check" id="monthView" type="radio" name="scaleView" value="month" />
-                            <label class="btn btn-phoenix-secondary bg-body-highlight-hover fs-10 py-1 mb-0" for="monthView">Month</label>
-                            <input class="btn-check" id="yearView" type="radio" name="scaleView" value="year" />
-                            <label class="btn btn-phoenix-secondary bg-body-highlight-hover fs-10 py-1 mb-0" for="yearView">Year</label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="gantt-milestones-chart"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row gx-0 gx-sm-5 gy-4 mb-8">
-                  <div class="col-12 col-xl-3 col-xxl-4 pe-xl-0">
-                    <h3 class="text-body-emphasis mb-4">Project overview</h3>
-                    <p class="text-body-secondary mb-4">The new redirection team is happy to announce that we've fixed all our unresponsive URLs and redirected them to new URLs. The tremendous assistance from our support team and the dev team, as well as that of the team lead's, this team has made an impossible possible within a week. They didn't stop for a moment, and we got our pages working again for all the valuable users. </p>
-                    <p class="text-body-secondary mb-0">Join us in celebrating the massive success of data transferring and getting us a huge revenue by eating out. Free public viewing and a buffet is offered for the great team as well as for the other teams working with us. We'll be checking out places for the best option available at hands and we'll let you know the schedule once we decide on one.</p><a class="fw-semibold" href="#!">read more</a>
-                  </div>
-                  <div class="col-12 col-xl-9 col-xxl-8">
-                    <div class="card h-100">
-                      <div class="card-body">
-                        <h3>Financial Overview</h3>
-                        <p class="text-body-tertiary">Budget vs Accrual vs Actual Spend</p>
-                        <div class="echart-accrual-actual-budget-bar" style="min-height: 230px;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row gx-0 gx-sm-5 gy-4 mb-8">
-                  <div class="col-12 col-xl-9 col-xxl-8 offset-xxl-4">
-                    <h4 class="text-body-emphasis mb-4">Team members</h4>
-                    <div class="d-flex mb-8">
-                      <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block outline-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                          <div class="avatar avatar-xl  me-1">
-                            <img class="rounded-circle " src="../../assets/img//team/33.webp" alt="" />
-
-                          </div>
-                        </a>
-                        <div class="dropdown-menu avatar-dropdown-menu p-0 overflow-hidden" style="width: 320px;">
-                          <div class="position-relative">
-                            <div class="bg-holder z-n1" style="background-image:url(../../assets/img/bg/bg-32.png);background-size: auto;">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="p-3">
-                              <div class="text-end">
-                                <button class="btn p-0 me-2"><span class="fa-solid fa-user-plus text-white"></span></button>
-                                <button class="btn p-0"><span class="fa-solid fa-ellipsis text-white"></span></button>
-                              </div>
-                              <div class="text-center">
-                                <div class="avatar avatar-xl status-online position-relative me-2 me-sm-0 me-xl-2 mb-2"><img class="rounded-circle border border-light-subtle" src="../../assets/img//team/33.webp" alt="" /></div>
-                                <h6 class="text-white">Tyrion Lannister</h6>
-                                <p class="text-light text-opacity-50 fw-semibold fs-10 mb-2">@tyrion222</p>
-                                <div class="d-flex flex-center mb-3">
-                                  <h6 class="text-white mb-0">224 <span class="fw-normal text-light text-opacity-75">connections</span></h6><span class="fa-solid fa-circle text-body-tertiary mx-1" data-fa-transform="shrink-10 up-2"></span>
-                                  <h6 class="text-white mb-0">23 <span class="fw-normal text-light text-opacity-75">mutual</span></h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bg-body-emphasis">
-                            <div class="p-3 border-bottom border-translucent">
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-phone"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-message"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg"><span class="fa-solid fa-video"></span></button>
-                                </div>
-                                <button class="btn btn-phoenix-primary"><span class="fa-solid fa-envelope me-2"></span>Send Email</button>
-                              </div>
-                            </div>
-                            <ul class="nav d-flex flex-column py-3 border-bottom">
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body d-inline-block" data-feather="clipboard"></span><span class="text-body-highlight flex-1">Assigned Projects</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body" data-feather="pie-chart"></span><span class="text-body-highlight flex-1">View activiy</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                            </ul>
-                          </div>
-                          <div class="p-3 d-flex justify-content-between"><a class="btn btn-link p-0 text-decoration-none" href="#!">Details </a><a class="btn btn-link p-0 text-decoration-none text-danger" href="#!">Unassign </a></div>
-                        </div>
-                      </div>
-                      <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block outline-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                          <div class="avatar avatar-xl  me-1">
-                            <img class="rounded-circle " src="../../assets/img//team/30.webp" alt="" />
-
-                          </div>
-                        </a>
-                        <div class="dropdown-menu avatar-dropdown-menu p-0 overflow-hidden" style="width: 320px;">
-                          <div class="position-relative">
-                            <div class="bg-holder z-n1" style="background-image:url(../../assets/img/bg/bg-32.png);background-size: auto;">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="p-3">
-                              <div class="text-end">
-                                <button class="btn p-0 me-2"><span class="fa-solid fa-user-plus text-white"></span></button>
-                                <button class="btn p-0"><span class="fa-solid fa-ellipsis text-white"></span></button>
-                              </div>
-                              <div class="text-center">
-                                <div class="avatar avatar-xl status-online position-relative me-2 me-sm-0 me-xl-2 mb-2"><img class="rounded-circle border border-light-subtle" src="../../assets/img//team/30.webp" alt="" /></div>
-                                <h6 class="text-white">Milind Mikuja</h6>
-                                <p class="text-light text-opacity-50 fw-semibold fs-10 mb-2">@tyrion222</p>
-                                <div class="d-flex flex-center mb-3">
-                                  <h6 class="text-white mb-0">224 <span class="fw-normal text-light text-opacity-75">connections</span></h6><span class="fa-solid fa-circle text-body-tertiary mx-1" data-fa-transform="shrink-10 up-2"></span>
-                                  <h6 class="text-white mb-0">23 <span class="fw-normal text-light text-opacity-75">mutual</span></h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bg-body-emphasis">
-                            <div class="p-3 border-bottom border-translucent">
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-phone"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-message"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg"><span class="fa-solid fa-video"></span></button>
-                                </div>
-                                <button class="btn btn-phoenix-primary"><span class="fa-solid fa-envelope me-2"></span>Send Email</button>
-                              </div>
-                            </div>
-                            <ul class="nav d-flex flex-column py-3 border-bottom">
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body d-inline-block" data-feather="clipboard"></span><span class="text-body-highlight flex-1">Assigned Projects</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body" data-feather="pie-chart"></span><span class="text-body-highlight flex-1">View activiy</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                            </ul>
-                          </div>
-                          <div class="p-3 d-flex justify-content-between"><a class="btn btn-link p-0 text-decoration-none" href="#!">Details </a><a class="btn btn-link p-0 text-decoration-none text-danger" href="#!">Unassign </a></div>
-                        </div>
-                      </div>
-                      <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block outline-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                          <div class="avatar avatar-xl  me-1">
-                            <img class="rounded-circle " src="../../assets/img//team/31.webp" alt="" />
-
-                          </div>
-                        </a>
-                        <div class="dropdown-menu avatar-dropdown-menu p-0 overflow-hidden" style="width: 320px;">
-                          <div class="position-relative">
-                            <div class="bg-holder z-n1" style="background-image:url(../../assets/img/bg/bg-32.png);background-size: auto;">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="p-3">
-                              <div class="text-end">
-                                <button class="btn p-0 me-2"><span class="fa-solid fa-user-plus text-white"></span></button>
-                                <button class="btn p-0"><span class="fa-solid fa-ellipsis text-white"></span></button>
-                              </div>
-                              <div class="text-center">
-                                <div class="avatar avatar-xl status-online position-relative me-2 me-sm-0 me-xl-2 mb-2"><img class="rounded-circle border border-light-subtle" src="../../assets/img//team/31.webp" alt="" /></div>
-                                <h6 class="text-white">Stanly Drinkwater</h6>
-                                <p class="text-light text-opacity-50 fw-semibold fs-10 mb-2">@tyrion222</p>
-                                <div class="d-flex flex-center mb-3">
-                                  <h6 class="text-white mb-0">224 <span class="fw-normal text-light text-opacity-75">connections</span></h6><span class="fa-solid fa-circle text-body-tertiary mx-1" data-fa-transform="shrink-10 up-2"></span>
-                                  <h6 class="text-white mb-0">23 <span class="fw-normal text-light text-opacity-75">mutual</span></h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bg-body-emphasis">
-                            <div class="p-3 border-bottom border-translucent">
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-phone"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-message"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg"><span class="fa-solid fa-video"></span></button>
-                                </div>
-                                <button class="btn btn-phoenix-primary"><span class="fa-solid fa-envelope me-2"></span>Send Email</button>
-                              </div>
-                            </div>
-                            <ul class="nav d-flex flex-column py-3 border-bottom">
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body d-inline-block" data-feather="clipboard"></span><span class="text-body-highlight flex-1">Assigned Projects</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body" data-feather="pie-chart"></span><span class="text-body-highlight flex-1">View activiy</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                            </ul>
-                          </div>
-                          <div class="p-3 d-flex justify-content-between"><a class="btn btn-link p-0 text-decoration-none" href="#!">Details </a><a class="btn btn-link p-0 text-decoration-none text-danger" href="#!">Unassign </a></div>
-                        </div>
-                      </div>
-                      <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block outline-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                          <div class="avatar avatar-xl  me-1">
-                            <img class="rounded-circle " src="../../assets/img//team/60.webp" alt="" />
-
-                          </div>
-                        </a>
-                        <div class="dropdown-menu avatar-dropdown-menu p-0 overflow-hidden" style="width: 320px;">
-                          <div class="position-relative">
-                            <div class="bg-holder z-n1" style="background-image:url(../../assets/img/bg/bg-32.png);background-size: auto;">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="p-3">
-                              <div class="text-end">
-                                <button class="btn p-0 me-2"><span class="fa-solid fa-user-plus text-white"></span></button>
-                                <button class="btn p-0"><span class="fa-solid fa-ellipsis text-white"></span></button>
-                              </div>
-                              <div class="text-center">
-                                <div class="avatar avatar-xl status-online position-relative me-2 me-sm-0 me-xl-2 mb-2"><img class="rounded-circle border border-light-subtle" src="../../assets/img//team/60.webp" alt="" /></div>
-                                <h6 class="text-white">Josef Stravinsky</h6>
-                                <p class="text-light text-opacity-50 fw-semibold fs-10 mb-2">@tyrion222</p>
-                                <div class="d-flex flex-center mb-3">
-                                  <h6 class="text-white mb-0">224 <span class="fw-normal text-light text-opacity-75">connections</span></h6><span class="fa-solid fa-circle text-body-tertiary mx-1" data-fa-transform="shrink-10 up-2"></span>
-                                  <h6 class="text-white mb-0">23 <span class="fw-normal text-light text-opacity-75">mutual</span></h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bg-body-emphasis">
-                            <div class="p-3 border-bottom border-translucent">
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-phone"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-message"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg"><span class="fa-solid fa-video"></span></button>
-                                </div>
-                                <button class="btn btn-phoenix-primary"><span class="fa-solid fa-envelope me-2"></span>Send Email</button>
-                              </div>
-                            </div>
-                            <ul class="nav d-flex flex-column py-3 border-bottom">
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body d-inline-block" data-feather="clipboard"></span><span class="text-body-highlight flex-1">Assigned Projects</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body" data-feather="pie-chart"></span><span class="text-body-highlight flex-1">View activiy</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                            </ul>
-                          </div>
-                          <div class="p-3 d-flex justify-content-between"><a class="btn btn-link p-0 text-decoration-none" href="#!">Details </a><a class="btn btn-link p-0 text-decoration-none text-danger" href="#!">Unassign </a></div>
-                        </div>
-                      </div>
-                      <div class="dropdown"><a class="dropdown-toggle dropdown-caret-none d-inline-block outline-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                          <div class="avatar avatar-xl  me-1">
-                            <img class="rounded-circle " src="../../assets/img//team/65.webp" alt="" />
-
-                          </div>
-                        </a>
-                        <div class="dropdown-menu avatar-dropdown-menu p-0 overflow-hidden" style="width: 320px;">
-                          <div class="position-relative">
-                            <div class="bg-holder z-n1" style="background-image:url(../../assets/img/bg/bg-32.png);background-size: auto;">
-                            </div>
-                            <!--/.bg-holder-->
-
-                            <div class="p-3">
-                              <div class="text-end">
-                                <button class="btn p-0 me-2"><span class="fa-solid fa-user-plus text-white"></span></button>
-                                <button class="btn p-0"><span class="fa-solid fa-ellipsis text-white"></span></button>
-                              </div>
-                              <div class="text-center">
-                                <div class="avatar avatar-xl status-online position-relative me-2 me-sm-0 me-xl-2 mb-2"><img class="rounded-circle border border-light-subtle" src="../../assets/img//team/65.webp" alt="" /></div>
-                                <h6 class="text-white">Igor Borvibson</h6>
-                                <p class="text-light text-opacity-50 fw-semibold fs-10 mb-2">@tyrion222</p>
-                                <div class="d-flex flex-center mb-3">
-                                  <h6 class="text-white mb-0">224 <span class="fw-normal text-light text-opacity-75">connections</span></h6><span class="fa-solid fa-circle text-body-tertiary mx-1" data-fa-transform="shrink-10 up-2"></span>
-                                  <h6 class="text-white mb-0">23 <span class="fw-normal text-light text-opacity-75">mutual</span></h6>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="bg-body-emphasis">
-                            <div class="p-3 border-bottom border-translucent">
-                              <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-phone"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg me-2"><span class="fa-solid fa-message"></span></button>
-                                  <button class="btn btn-phoenix-secondary btn-icon btn-icon-lg"><span class="fa-solid fa-video"></span></button>
-                                </div>
-                                <button class="btn btn-phoenix-primary"><span class="fa-solid fa-envelope me-2"></span>Send Email</button>
-                              </div>
-                            </div>
-                            <ul class="nav d-flex flex-column py-3 border-bottom">
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body d-inline-block" data-feather="clipboard"></span><span class="text-body-highlight flex-1">Assigned Projects</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                              <li class="nav-item"><a class="nav-link px-3 d-flex flex-between-center" href="#!"> <span class="me-2 text-body" data-feather="pie-chart"></span><span class="text-body-highlight flex-1">View activiy</span><span class="fa-solid fa-chevron-right fs-11"></span></a></li>
-                            </ul>
-                          </div>
-                          <div class="p-3 d-flex justify-content-between"><a class="btn btn-link p-0 text-decoration-none" href="#!">Details </a><a class="btn btn-link p-0 text-decoration-none text-danger" href="#!">Unassign </a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <h4 class="text-body-emphasis mb-4">Tags</h4><span class="badge badge-tag me-2 mb-1">Education</span><span class="badge badge-tag me-2 mb-1">Machine</span><span class="badge badge-tag me-2 mb-1">Coding</span><span class="badge badge-tag me-2 mb-1">Health Equity</span><span class="badge badge-tag me-2 mb-1">Management</span><span class="badge badge-tag me-2 mb-1">Grant</span><span class="badge badge-tag me-2 mb-1">Initiatives</span><span class="badge badge-tag me-2 mb-1">Neurology</span><span class="badge badge-tag me-2 mb-1">CCC</span><span class="badge badge-tag me-2 mb-1">Gilead</span><span class="badge badge-tag me-2 mb-1">Internal</span><span class="badge badge-tag me-2 mb-1">External</span>
-                  </div>
+      <div class="content">
+        <nav class="mb-3" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
+            <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
+            <li class="breadcrumb-item active">Default</li>
+          </ol>
+        </nav>
+        <div class="border-bottom border-translucent mb-7 mx-n3 px-2 mx-lg-n6 px-lg-6">
+          <div class="row">
+            <div class="col-xl-9">
+              <div class="d-sm-flex justify-content-between">
+                <h2 class="mb-4">Create a new lead</h2>
+                <div class="d-flex mb-3">
+                  <button class="btn btn-phoenix-primary me-2 px-6">Cancel</button>
+                  <button class="btn btn-primary">Create lead</button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xxl-4 px-0 border-start-xxl border-top-sm">
-            <div class="bg-light dark__bg-gray-1100 h-100">
-              <div class="p-4 p-lg-6">
-                <h3 class="text-body-highlight mb-4 fw-bold">Recent activity</h3>
-                <div class="timeline-vertical timeline-with-details">
-                  <div class="timeline-item position-relative">
-                    <div class="row g-md-3">
-                      <div class="col-12 col-md-auto d-flex">
-                        <div class="timeline-item-date order-1 order-md-0 me-md-4">
-                          <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">01 MARCH, 2023<br class="d-none d-md-block" /> 10:30 AM</p>
-                        </div>
-                        <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                          <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-chess text-primary-dark fs-10"></span></div><span class="timeline-bar border-end border-dashed"></span>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="timeline-item-content ps-6 ps-md-3">
-                          <h5 class="fs-9 lh-sm">Milestone 1</h5>
-                          <p class="fs-9">by <a class="fw-semibold" href="#!">Shantinon Mekalan</a></p>
-                          <p class="fs-9 text-body-secondary mb-5">Collection and analysis of baseline data – patient chart review 2023</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline-item position-relative">
-                    <div class="row g-md-3">
-                      <div class="col-12 col-md-auto d-flex">
-                        <div class="timeline-item-date order-1 order-md-0 me-md-4">
-                          <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">05 JUNE, 2023<br class="d-none d-md-block" /> 12:30 AM</p>
-                        </div>
-                        <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                          <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-dove text-primary-dark fs-10"></span></div><span class="timeline-bar border-end border-dashed"></span>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="timeline-item-content ps-6 ps-md-3">
-                          <h5 class="fs-9 lh-sm">Milestone 2</h5>
-                          <p class="fs-9">by <a class="fw-semibold" href="#!">Bookworm22</a></p>
-                          <p class="fs-9 text-body-secondary mb-5">Contract Sign Off</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline-item position-relative">
-                    <div class="row g-md-3">
-                      <div class="col-12 col-md-auto d-flex">
-                        <div class="timeline-item-date order-1 order-md-0 me-md-4">
-                          <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">15 JULY, 2023<br class="d-none d-md-block" /> 2:30 AM</p>
-                        </div>
-                        <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                          <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-dungeon text-primary-dark fs-10"></span></div><span class="timeline-bar border-end border-dashed"></span>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="timeline-item-content ps-6 ps-md-3">
-                          <h5 class="fs-9 lh-sm">Milestone 3</h5>
-                          <p class="fs-9">by <a class="fw-semibold" href="#!">Sharuka Nijibum</a></p>
-                          <p class="fs-9 text-body-secondary mb-5">Development of educational materials, including podcasts – to be distributed to ACCC members (2023-2024)</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="timeline-item position-relative">
-                    <div class="row g-md-3">
-                      <div class="col-12 col-md-auto d-flex">
-                        <div class="timeline-item-date order-1 order-md-0 me-md-4">
-                          <p class="fs-10 fw-semibold text-body-tertiary text-opacity-85 text-end">15 AUGUST, 2023<br class="d-none d-md-block" /> 2:30 AM</p>
-                        </div>
-                        <div class="timeline-item-bar position-md-relative me-3 me-md-0">
-                          <div class="icon-item icon-item-sm rounded-7 shadow-none bg-primary-subtle"><span class="fa-solid fa-dungeon text-primary-dark fs-10"></span></div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="timeline-item-content ps-6 ps-md-3">
-                          <h5 class="fs-9 lh-sm">Milestone 4</h5>
-                          <p class="fs-9">by <a class="fw-semibold" href="#!">Sharuka Nijibum</a></p>
-                          <p class="fs-9 text-body-secondary mb-0">Patient and provider survey (2023)</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="px-4 px-lg-6">
-                <h4 class="mb-3">Files</h4>
-              </div>
-              <div class="border-top px-4 px-lg-6 py-4">
-                <div class="me-n3">
-                  <div class="d-flex flex-between-center">
-                    <div class="d-flex mb-1"><span class="fa-solid fa-image me-2 text-body-tertiary fs-9"></span>
-                      <p class="text-body-highlight mb-0 lh-1">Silly_sight_1.png</p>
-                    </div>
-                    <div class="btn-reveal-trigger">
-                      <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                    </div>
-                  </div>
-                  <div class="d-flex fs-9 text-body-tertiary mb-2 flex-wrap"><span>768 kb</span><span class="text-body-quaternary mx-1">| </span><a href="#!">Shantinan Mekalan </a><span class="text-body-quaternary mx-1">| </span><span class="text-nowrap">21st Dec, 12:56 PM</span></div><img class="rounded-2" src="../../assets/img/generic/40.png" alt="" style="width:320px" />
-                </div>
-              </div>
-              <div class="border-top px-4 px-lg-6 py-4">
-                <div class="me-n3">
-                  <div class="d-flex flex-between-center">
-                    <div>
-                      <div class="d-flex align-items-center mb-1"><span class="fa-solid fa-image me-2 fs-9 text-body-tertiary"></span>
-                        <p class="text-body-highlight mb-0 lh-1">All_images.zip</p>
-                      </div>
-                      <div class="d-flex fs-9 text-body-tertiary mb-0 flex-wrap"><span>12.8 mb</span><span class="text-body-quaternary mx-1">| </span><a href="#!">Yves Tanguy </a><span class="text-body-quaternary mx-1">| </span><span class="text-nowrap">19th Dec, 08:56 PM</span></div>
-                    </div>
-                    <div class="btn-reveal-trigger">
-                      <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="border-top px-4 px-lg-6 py-4 ">
-                <div class="me-n3">
-                  <div class="d-flex flex-between-center">
-                    <div>
-                      <div class="d-flex align-items-center mb-1 flex-wrap"><span class="fa-solid fa-file-lines me-2 fs-9 text-body-tertiary"></span>
-                        <p class="text-body-highlight mb-0 lh-1">Project.txt</p>
-                      </div>
-                      <div class="d-flex fs-9 text-body-tertiary mb-0 flex-wrap"><span>123 kb</span><span class="text-body-quaternary mx-1">| </span><a href="#!">Shantinan Mekalan </a><span class="text-body-quaternary mx-1">| </span><span class="text-nowrap">12th Dec, 12:56 PM</span></div>
-                    </div>
-                    <div class="btn-reveal-trigger">
-                      <button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h"></span></button>
-                      <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!">Edit</a><a class="dropdown-item text-danger" href="#!">Delete</a><a class="dropdown-item" href="#!">Download</a><a class="dropdown-item" href="#!">Report abuse</a></div>
-                    </div>
-                  </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-9">
+            <div class="d-flex align-items-end position-relative mb-7">
+              <input class="d-none" id="upload-avatar" type="file" />
+              <div class="hoverbox" style="width: 150px; height: 150px">
+                <div class="hoverbox-content rounded-circle d-flex flex-center z-1" style="--phoenix-bg-opacity: .56;"><span class="fa-solid fa-camera fs-1 text-body-quaternary"></span></div>
+                <div class="position-relative bg-body-quaternary rounded-circle cursor-pointer d-flex flex-center mb-xxl-7">
+                  <div class="avatar avatar-5xl"><img class="rounded-circle" src="../../assets/img/team/150x150/58.webp" alt="" /></div>
+                  <label class="w-100 h-100 position-absolute z-1" for="upload-avatar"></label>
                 </div>
               </div>
             </div>
+            <h4 class="mb-3">Lead Information </h4>
+            <form class="row g-3 mb-9">
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectOwner">
+                    <option selected="selected"> Max Ernst</option>
+                    <option value="1">Ernst</option>
+                    <option value="2">Max </option>
+                  </select>
+                  <label for="floatingSelectOwner">Lead owner</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputFirstname" type="text" placeholder="First name" />
+                  <label for="floatingInputFirstname">First name</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputLastname" type="text" placeholder="Last name" />
+                  <label for="floatingInputLastname">Last name</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputCompany" type="text" placeholder="Company" />
+                  <label for="floatingInputCompany">Company</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputTitle" type="text" placeholder="title" />
+                  <label for="floatingInputTitle">Title</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputEmail" type="text" placeholder="email" />
+                  <label for="floatingInputEmail">Email</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputAlternativeEmail" type="text" placeholder="alternative email" />
+                  <label for="floatingInputAlternativeEmail">Alternative Email</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputPhone" type="tel" placeholder="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+                  <label for="floatingInputPhone">Phone</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputWebsite" type="text" placeholder="website" />
+                  <label for="floatingInputWebsite">Website</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputLinkedin" type="text" placeholder="linkedin" />
+                  <label for="floatingInputLinkedin">linkedin</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputSkype" type="text" placeholder="skype" />
+                  <label for="floatingInputSkype">Skype id</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputTwitter" type="text" placeholder="twitter" />
+                  <label for="floatingInputTwitter">Twitter </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputEmployees" type="text" placeholder="employees" />
+                  <label for="floatingInputEmployees">Number of employees</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputRevenue" type="text" placeholder="revenue" />
+                  <label for="floatingInputRevenue">Annual revenue </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectIndustry">
+                    <option selected="selected">Large Enterprise</option>
+                    <option value="1">Manufacturing</option>
+                    <option value="2">Education</option>
+                    <option value="3">Technology</option>
+                  </select>
+                  <label for="floatingSelectIndustry">industry</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectStatus">
+                    <option selected="selected">New</option>
+                    <option value="1">suspended</option>
+                    <option value="2">ongoing</option>
+                    <option value="3">Current</option>
+                  </select>
+                  <label for="floatingSelectStatus">Lead status </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectLeadSource">
+                    <option selected="selected">Advertisement</option>
+                    <option value="1">Advertisement One</option>
+                    <option value="2">Advertisement Two</option>
+                    <option value="3">Consulting</option>
+                  </select>
+                  <label for="floatingSelectLeadSource">lead source</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectRating">
+                    <option selected="selected"> Active</option>
+                    <option value="1">Inactive</option>
+                    <option value="2">Active</option>
+                  </select>
+                  <label for="floatingSelectRating">rating</label>
+                </div>
+              </div>
+              <h4 class="mt-6">Address Information</h4>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputStreet" type="text" placeholder="street" />
+                  <label for="floatingInputStreet">Street</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectCity">
+                    <option selected="selected"> Neo centrola</option>
+                    <option value="1">London</option>
+                    <option value="2">New York </option>
+                  </select>
+                  <label for="floatingSelectCity">City</label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectState">
+                    <option selected="selected"> Qualimando</option>
+                    <option value="1">Sovereign</option>
+                    <option value="2">Northeastern United States</option>
+                  </select>
+                  <label for="floatingSelectState">State</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelectCountry">
+                    <option selected="selected"> United Empire of Brekania</option>
+                    <option value="1">UK</option>
+                    <option value="2">USA</option>
+                  </select>
+                  <label for="floatingSelectCountry">Country</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating">
+                  <input class="form-control" id="floatingInputZipcode" type="text" placeholder="zip code" />
+                  <label for="floatingInputZipcode">zip code</label>
+                </div>
+              </div>
+              <h4 class="mt-6">Description</h4>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" id="floatingProjectOverview" placeholder="Leave a comment here" style="height: 128px"></textarea>
+                  <label for="floatingProjectOverview">Lead description</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-end mt-6">
+                <button class="btn btn-primary">Create lead</button>
+              </div>
+            </form>
           </div>
         </div>
         <footer class="footer position-absolute">
@@ -1429,12 +1140,7 @@
     <script src="../../vendors/list.js/list.min.js"></script>
     <script src="../../vendors/feather-icons/feather.min.js"></script>
     <script src="../../vendors/dayjs/dayjs.min.js"></script>
-    <script src="../../vendors/choices/choices.min.js"></script>
-    <script src="../../vendors/echarts/echarts.min.js"></script>
-    <script src="../../vendors/dhtmlx-gantt/dhtmlxgantt.js"></script>
-    <script src="../../vendors/flatpickr/flatpickr.min.js"></script>
     <script src="../../assets/js/phoenix.js"></script>
-    <script src="../../assets/js/project-details.js"></script>
 
   </body>
 

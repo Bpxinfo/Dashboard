@@ -7,13 +7,22 @@ include ../../mixins/project-management/ProjectDetailsModal
 include ../../mixins/project-management/ToDoList
 include ../../mixins/dashboard/project-management/ToDo
 include ../../mixins/project-management/Common
+include ../../mixins/dashboard/e-commerce/TotalSalesChart
+include ../../mixins/project-management/MilestonesGantt
+
 
 prepend styles
+  link(href=`${CWD}vendors/choices/choices.min.css`, rel='stylesheet')
+  link(href=`${CWD}vendors/dhtmlx-gantt/dhtmlxgantt.css`, rel='stylesheet')
   link(href=`${CWD}vendors/flatpickr/flatpickr.min.css`, rel='stylesheet')
 
+
 prepend scripts
+  script(src=`${CWD}vendors/choices/choices.min.js`)
   script(src=`${CWD}vendors/echarts/echarts.min.js`)
+  script(src=`${CWD}vendors/dhtmlx-gantt/dhtmlxgantt.js`)
   script(src=`${CWD}vendors/flatpickr/flatpickr.min.js`)
+
 
 append scripts
   script(src=`${CWD}assets/js/project-details.js`)
@@ -39,7 +48,7 @@ block content
           span.badge.badge-phoenix.badge-phoenix-primary
             | Ongoing
             span.ms-1.uil.uil-stopwatch
-        .row.gx-0.gx-sm-5.gy-8.mb-8
+        .row.gx-0.gx-sm-5.gy-4.mb-4
           .col-12.col-xl-3.col-xxl-4.pe-xl-0
             .mb-4.mb-xl-7
               .row.gx-0.gx-sm-7
@@ -50,7 +59,15 @@ block content
                         td.py-1(colspan='2')
                           .d-flex
                             span.fa-solid.fa-earth-americas.me-2.text-body-tertiary.fs-9
-                            h5.text-body Public project
+                            h5.text-body Public project 
+                      tr
+                        td.alight-top.py-1 
+                          .d-flex
+                            span.fa-solid.fa-list-check.me-2.text-body-tertiary.fs-9
+                            h5.text-body-emphasis.mb-0.me-2.text-nowrap 4
+                              span.text-body.fw-normal.ms-2 Milestones
+                            a.fw-bold.fs-9.mt-1(href="#!") See Milestones 
+                              span.fa-solid.fa-chevron-right.me-2.fs-10
                       tr
                         td.align-top.py-1
                           .d-flex
@@ -76,23 +93,26 @@ block content
                       tr
                         td.align-top.py-1.text-body.text-nowrap.fw-bold Progress :
                         td.text-warning.fw-semibold.ps-3 100%
-            div
-              .d-flex.align-items-center
-                span.fa-solid.fa-list-check.me-2.text-body-tertiary.fs-9
-                h5.text-body-emphasis.mb-0.me-2 4
-                  span.text-body.fw-normal.ms-2 Milestones
-                a.fw-bold.fs-9.mt-1(href="#!") See Milestones 
-                  span.fa-solid.fa-chevron-right.me-2.fs-10
-          .col-12.col-xl-9.col-xxl-8
-            +TotalSalesChart
-          .col-12.col-sm-5.col-lg-4.col-xl-3.col-xxl-4
-            +AccrualBarChart
-          .col-12.col-sm-7.col-lg-8.col-xl-5
-            +MembersTags
-        h3.text-body-emphasis.mb-4 Project overview
-        p.text-body-secondary.mb-4 The new redirection team is happy to announce that we’ve fixed all our unresponsive URLs and redirected them to new URLs. The tremendous assistance from our support team and the dev team, as well as that of the team lead’s, this team has made an impossible possible within a week. They didn’t stop for a moment, and we got our pages working again for all the valuable users. 
-        p.text-body-secondary.mb-0 Join us in celebrating the massive success of data transferring and getting us a huge revenue by eating out. Free public viewing and a buffet is offered for the great team as well as for the other teams working with us. We’ll be checking out places for the best option available at hands and we’ll let you know the schedule once we decide on one.
-          a.fw-semibold(href="#!") read more 
+            
+          .col-12.col-xl-9.col-xxl-8.bg-body-emphasis
+            +MilestonesGantt
+
+
+          .row.gx-0.gx-sm-5.gy-4.mb-8
+            .col-12.col-xl-3.col-xxl-4.pe-xl-0
+              h3.text-body-emphasis.mb-4 Project overview
+              p.text-body-secondary.mb-4 The new redirection team is happy to announce that we've fixed all our unresponsive URLs and redirected them to new URLs. The tremendous assistance from our support team and the dev team, as well as that of the team lead's, this team has made an impossible possible within a week. They didn't stop for a moment, and we got our pages working again for all the valuable users. 
+              p.text-body-secondary.mb-0 Join us in celebrating the massive success of data transferring and getting us a huge revenue by eating out. Free public viewing and a buffet is offered for the great team as well as for the other teams working with us. We'll be checking out places for the best option available at hands and we'll let you know the schedule once we decide on one.
+              a.fw-semibold(href="#!") read more
+
+            .col-12.col-xl-9.col-xxl-8
+              +AccrualBarChart
+
+          .row.gx-0.gx-sm-5.gy-4.mb-8
+            .col-12.col-xl-9.col-xxl-8.offset-xxl-4
+              +MembersTags
+
+        
     .col-12.col-xxl-4.px-0.border-start-xxl.border-top-sm
       .bg-light.dark__bg-gray-1100.h-100
         .p-4.p-lg-6

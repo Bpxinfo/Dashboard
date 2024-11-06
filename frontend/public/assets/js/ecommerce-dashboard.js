@@ -299,7 +299,7 @@
           {
             type: 'gauge',
             center: ['50%', '60%'],
-            name: 'Paying customer',
+            name: '# of Projects in Progress',
             startAngle: 180,
             endAngle: 0,
             min: 0,
@@ -344,7 +344,7 @@
             },
             data: [
               {
-                value: 30
+                value: 60
               }
             ]
           }
@@ -1669,7 +1669,7 @@
         legend: {
           data: [
             {
-              name: 'Fourth time',
+              name: 'Lead Time',
               icon: 'roundRect',
               itemStyle: {
                 color: getColor('primary-light'),
@@ -1677,12 +1677,12 @@
               }
             },
             {
-              name: 'Third time',
+              name: 'Cycle Time',
               icon: 'roundRect',
               itemStyle: { color: getColor('info-lighter'), borderWidth: 0 }
             },
             {
-              name: 'Second time',
+              name: 'Average Resolution Time',
               icon: 'roundRect',
               itemStyle: { color: getColor('primary'), borderWidth: 0 }
             }
@@ -1762,9 +1762,9 @@
         },
         series: [
           {
-            name: 'Fourth time',
+            name: 'Lead Time',
             type: 'line',
-            data: [62, 90, 90, 90, 78, 84, 17, 17, 17, 17, 82, 95],
+            data: [8, 12, 7, 15, 9, 10, 13, 11, 14, 8, 12, 10],
             showSymbol: false,
             symbol: 'circle',
             symbolSize: 10,
@@ -1785,9 +1785,9 @@
             zlevel: 3
           },
           {
-            name: 'Third time',
+            name: 'Cycle Time',
             type: 'line',
-            data: [50, 50, 30, 62, 18, 70, 70, 22, 70, 70, 70, 70],
+            data: [5, 6, 4, 8, 7, 5, 9, 6, 5, 7, 8, 6],
             showSymbol: false,
             symbol: 'circle',
             symbolSize: 10,
@@ -1807,9 +1807,9 @@
             zlevel: 2
           },
           {
-            name: 'Second time',
+            name: 'Average Resolution Time',
             type: 'line',
-            data: [40, 78, 60, 78, 60, 20, 60, 40, 60, 40, 20, 78],
+            data: [4, 7, 6, 5, 8, 9, 6, 7, 5, 6, 7, 8],
             showSymbol: false,
             symbol: 'circle',
             symbolSize: 10,
@@ -1910,9 +1910,9 @@
               color: getColor('light-text-emphasis')
             },
             data: [
-              { value: 7200000, name: 'Percentage discount' },
-              { value: 1800000, name: 'Fixed card discount' },
-              { value: 1000000, name: 'Fixed product discount' }
+              { value: 7200000, name: 'Healthy' },
+              { value: 1800000, name: 'At Risk' },
+              { value: 1000000, name: 'Critical' }
             ]
           }
         ],

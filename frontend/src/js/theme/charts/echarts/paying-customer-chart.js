@@ -34,7 +34,7 @@ const payingCustomerChartInit = () => {
         {
           type: 'gauge',
           center: ['50%', '60%'],
-          name: 'Paying customer',
+          name: '# of Projects in Progress',
           startAngle: 180,
           endAngle: 0,
           min: 0,
@@ -79,7 +79,7 @@ const payingCustomerChartInit = () => {
           },
           data: [
             {
-              value: 30
+              value: 60
             }
           ]
         }

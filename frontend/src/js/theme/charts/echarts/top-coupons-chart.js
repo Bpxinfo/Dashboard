@@ -74,9 +74,9 @@ const topCouponsChartInit = () => {
             color: getColor('light-text-emphasis')
           },
           data: [
-            { value: 7200000, name: 'Percentage discount' },
-            { value: 1800000, name: 'Fixed card discount' },
-            { value: 1000000, name: 'Fixed product discount' }
+            { value: 7200000, name: 'Healthy' },
+            { value: 1800000, name: 'At Risk' },
+            { value: 1000000, name: 'Critical' }
           ]
         }
       ],
