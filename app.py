@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 file_roadmap = 'https://bpxai-my.sharepoint.com/personal/sam_wang_bpx_ai/_layouts/15/download.aspx?share=ER_7qkLxV2JBk0wW_M-p_lUBra6wmxtgzDesLr7BXcIUtA'
 file_milestones = 'https://bpxai-my.sharepoint.com/personal/sam_wang_bpx_ai/_layouts/15/download.aspx?share=Ea_e-nI3z0tBtl6Q3Iuvz48B_4IpO_qteKH2T9RGd_nCNw'
 
-output_json_file = 'frontend/src/data/main_data.json'
+output_json_file = 'src/data/main_data.json'
 COLUMN_MAPPING = {
     'project_id': ['CCC Project Title', 'CCC Project', 'Project ID'],
     # Add other fields as needed
